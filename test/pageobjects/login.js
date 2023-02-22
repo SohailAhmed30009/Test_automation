@@ -60,7 +60,7 @@ class getStarted {
   }
 
   async getAccessToken() {
-    const url = "https://web.api.gilgitapp.com/v1/auth/god-mode";
+    const url = "http";
     const headers = {
       "Content-Type": "application/json",
     };
@@ -74,7 +74,7 @@ class getStarted {
   async login() {
     const accessToken = await this.getAccessToken();
     console.log(accessToken, "Access Token");
-    const loginEndPointUrl = "https://web.api.gilgitapp.com/v1/auth/login";
+    const loginEndPointUrl = "http";
     const requestOptions = {
       url: loginEndPointUrl,
       headers: {
